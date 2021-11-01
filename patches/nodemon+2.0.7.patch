@@ -1,0 +1,42 @@
+diff --git a/node_modules/nodemon/lib/nodemon.js b/node_modules/nodemon/lib/nodemon.js
+index ce649cb..3ffddfe 100644
+--- a/node_modules/nodemon/lib/nodemon.js
++++ b/node_modules/nodemon/lib/nodemon.js
+@@ -85,7 +85,7 @@ function nodemon(settings) {
+     utils.colours = config.options.colours;
+ 
+     // always echo out the current version
+-    utils.log.info(version.pinned);
++    config.options.verbose&&utils.log.info(version.pinned);
+ 
+     const cwd = process.cwd();
+ 
+@@ -147,7 +147,7 @@ function nodemon(settings) {
+     }
+ 
+     if (config.options.restartable) {
+-      utils.log.info('to restart at any time, enter `' +
++      config.options.verbose&&utils.log.info('to restart at any time, enter `' +
+         config.options.restartable + '`');
+     }
+ 
+@@ -181,8 +181,7 @@ function nodemon(settings) {
+       return rule;
+     }).filter(Boolean).join(' ');
+     if (ignoring) utils.log.detail('ignoring: ' + ignoring);
+-
+-    utils.log.info('watching path(s): ' + config.options.monitor.map(function (rule) {
++    config.options.verbose&&utils.log.info('watching path(s): ' + config.options.monitor.map(function (rule) {
+       if (rule.slice(0, 1) !== '!') {
+         try {
+           rule = path.relative(process.cwd(), rule);
+@@ -193,8 +192,7 @@ function nodemon(settings) {
+ 
+       return false;
+     }).filter(Boolean).join(' '));
+-
+-    utils.log.info('watching extensions: ' + (config.options.execOptions.ext || '(all)'));
++    config.options.verbose&&utils.log.info('watching extensions: ' + (config.options.execOptions.ext || '(all)'));
+ 
+     if (config.options.dump) {
+       utils.log._log('log', '--------------');

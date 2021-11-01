@@ -1,0 +1,144 @@
+// 列表
+.product-list-content {
+  padding: 20px;
+}
+.product-list-btn-group {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+// 详情
+.product-detail-content {
+  margin-bottom: 60px;
+  padding-top: 20px ;
+  //  有标题部分
+  .product-item-content {
+    margin:0 20px 15px ;
+    color: #606266;
+    background-color: #fff;
+    .product-content-title {
+      display: flex;
+      justify-content: space-between; 
+      line-height: 22px;
+      padding: 20px 20px 15px;
+      border-bottom: 1px solid #efefef;
+      font-size: 16px;
+      color: #3C4043;
+    }
+    .product-content-info {
+      font-size: 14px;
+      padding: 12px 20px;
+      display: flex;
+      flex-flow: wrap;
+      .product-item-code {
+        padding: 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 24px;
+        /deep/.form {
+          width: auto;
+          .el-form-item {
+            margin-bottom: 0;
+          }
+        }
+        .yinru {
+          width: 40px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .product-item-top {
+    // padding-top: 20px ;
+    padding-bottom: 12px ;
+    display: flex;
+    justify-content: space-between;
+  }
+  .description {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 28px;
+    height: 28px;
+    padding: 0 20px;
+    font-size: 12px;
+    color: #777777;
+  }
+  // 无标题部分
+  .product-item-codeinfo {
+    padding: 0 20px;
+    display: flex;
+    .code-item {
+      font-size: 18px;
+      color: #151222;
+      line-height: 25px;
+      height: 25px;
+      .code-der {
+        font-size: 12px;
+        color: #777777;
+      }
+    }
+  }
+  .tableitem {
+    /deep/ thead,tbody {
+      font-size: 14px;
+    }
+    /deep/ tbody {
+      tr {
+        height: 50px;
+      }
+      .el-form-item__error {
+        padding-top: 4px;
+      }
+    }
+  }
+  /deep/ .el-select .el-input.is-focus .el-input__inner {
+    border-color: #549fff;
+}
+}
+
+.product-is-request::before {
+  content: "*";
+  margin-right: 4px;
+  color: red;
+}
+
+.product-no-request::before {
+  display: none;
+}
+// .product-style-table {
+//   .el-form-item.is-required {
+//     margin-bottom: 22px;
+//   }
+// }
+.product-btn-group {
+  bottom: 0;
+  z-index: 200;
+  padding: 10px;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ecf0f3;
+  position: fixed;
+  .btn-groups {
+    position: relative;
+    left: 40%;
+  }
+}
+// 待审核
+.Pending {
+  color: #FF9214;
+}
+// 已审核
+.Audited {
+  color: #00BCC5;
+}
+.disabled {
+  color:#BBC2D0;
+}
+.refuse {
+  color: #FF4444;
+}

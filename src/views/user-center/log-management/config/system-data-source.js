@@ -1,0 +1,25 @@
+const systemDataSource = {
+  'userCenter': '用户中心',
+  'sfabric': '大布行ERP',
+  'mall': '智布商城',
+  'tech': '工艺中心',
+  'oa': '智布办公小程序',
+  'factory': '智布协同小程序',
+  'srm': '供应商采购管理',
+  'finance': '财务管理',
+  'crm': '销售管理系统',
+  'basis': '基础数据',
+  'catalog': '产品目录库',
+  'techManage': '工艺管理',
+  'customerOrder': '客户订单',
+  'color': '色号花号库',
+  'aps': '计划管理',
+  'price': '价格中心',
+  'wms': '仓储管理',
+  'productCenter': '产品目录库',
+  'pms': '采购管理',
+  'qa': '质量管理',
+  'bmpAps': '产能中心',
+  'processingMgr': '加工管理'
+}
+export default systemDataSource

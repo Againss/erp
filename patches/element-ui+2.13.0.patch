@@ -1,0 +1,61 @@
+diff --git a/node_modules/element-ui/lib/element-ui.common.js b/node_modules/element-ui/lib/element-ui.common.js
+index a425343..3dcf586 100644
+--- a/node_modules/element-ui/lib/element-ui.common.js
++++ b/node_modules/element-ui/lib/element-ui.common.js
+@@ -23011,7 +23011,7 @@ formvue_type_template_id_a1b5ff34_render._withStripped = true
+       var index = this.potentialLabelWidthArr.indexOf(width);
+       // it's impossible
+       if (index === -1) {
+-        throw new Error('[ElementForm]unpected width ', width);
++        // throw new Error('[ElementForm]unpected width ', width);
+       }
+       return index;
+     },
+@@ -23211,7 +23211,7 @@ var external_async_validator_default = /*#__PURE__*/__webpack_require__.n(extern
+     getLabelWidth: function getLabelWidth() {
+       if (this.$el && this.$el.firstElementChild) {
+         var computedWidth = window.getComputedStyle(this.$el.firstElementChild).width;
+-        return Math.ceil(parseFloat(computedWidth));
++        return Math.ceil(parseFloat(computedWidth)||0);
+       } else {
+         return 0;
+       }
+diff --git a/node_modules/element-ui/lib/form-item.js b/node_modules/element-ui/lib/form-item.js
+index ad5fb09..6cb34ee 100644
+--- a/node_modules/element-ui/lib/form-item.js
++++ b/node_modules/element-ui/lib/form-item.js
+@@ -375,7 +375,7 @@ var util_ = __webpack_require__(3);
+     getLabelWidth: function getLabelWidth() {
+       if (this.$el && this.$el.firstElementChild) {
+         var computedWidth = window.getComputedStyle(this.$el.firstElementChild).width;
+-        return Math.ceil(parseFloat(computedWidth));
++        return Math.ceil(parseFloat(computedWidth)||0);
+       } else {
+         return 0;
+       }
+diff --git a/node_modules/element-ui/lib/form.js b/node_modules/element-ui/lib/form.js
+index 0386b33..2e21429 100644
+--- a/node_modules/element-ui/lib/form.js
++++ b/node_modules/element-ui/lib/form.js
+@@ -397,7 +397,7 @@ var merge_default = /*#__PURE__*/__webpack_require__.n(merge_);
+       var index = this.potentialLabelWidthArr.indexOf(width);
+       // it's impossible
+       if (index === -1) {
+-        throw new Error('[ElementForm]unpected width ', width);
++        // throw new Error('[ElementForm]unpected width ', width);
+       }
+       return index;
+     },
+diff --git a/node_modules/element-ui/packages/form/src/label-wrap.vue b/node_modules/element-ui/packages/form/src/label-wrap.vue
+index d263f7d..e536926 100644
+--- a/node_modules/element-ui/packages/form/src/label-wrap.vue
++++ b/node_modules/element-ui/packages/form/src/label-wrap.vue
+@@ -32,7 +32,7 @@ export default {
+     getLabelWidth() {
+       if (this.$el && this.$el.firstElementChild) {
+         const computedWidth = window.getComputedStyle(this.$el.firstElementChild).width;
+-        return Math.ceil(parseFloat(computedWidth));
++        return Math.ceil(parseFloat(computedWidth)||0);
+       } else {
+         return 0;
+       }

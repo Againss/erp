@@ -1,0 +1,94 @@
+/* 列表样式 */
+.list{
+  margin: 20px 20px 0 20px;
+  height: 100%;
+  .bk{
+    background:#fff;
+  }
+  .search{
+    padding:20px 20px 0px;
+    margin-bottom:15px;
+    background:#fff;
+  }
+  .tabs{
+    .el-tabs{
+      .el-tabs__header{
+        margin:0;
+        margin-bottom: 0.5px;
+        .el-tabs__nav-scroll{
+          padding-left: 20px;
+          height:60px;
+          line-height: 60px;
+          .el-tabs__item{
+            font-size: 14px;
+          }
+        }
+        .el-tabs__nav-wrap::after{
+          height: 1px;
+        }
+      }
+    }
+  }
+  .table-list{
+    margin:0 10px;
+    padding-bottom:10px;
+    .el-table td{
+      border:none;
+    }
+    .el-table::before {
+      height: 0;
+    }
+    .el-table__row td {
+      padding: 13px 0;
+    }
+    .el-table td th{
+      border-bottom:1px solid #dfe6ec
+    }
+  }
+}
+/* 详情样式 */
+.details{
+  padding: 0 20px;
+  .card{
+    background: #fff;
+    .card-title{
+      border-bottom: 1px solid #e9eff2;
+      font-size: 16px;
+      color: #151222;
+      line-height: 22px;
+      padding: 20px 0 15px 20px;
+    }
+    .card-content{
+      padding:20px;
+    }
+    .table-detail{
+      tr:nth-child(even){
+        background:none
+      }
+      .el-table th {
+        background-color: #f5f7fa;
+        padding: 0;
+        .cell {
+          height: 40px;
+          line-height: 40px;
+        }
+      }
+      .el-table td {
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+      }
+    }
+    .table-detail.edit{
+      .el-table td {
+        height: 50px;
+        line-height: 50px;
+      }
+    }
+  }
+}
+.el-button.sub-main{
+  border: 1px solid #0986FF;;
+  color:#0986FF;
+  border-radius: 4px;
+}

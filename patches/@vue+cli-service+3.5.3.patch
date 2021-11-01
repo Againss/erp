@@ -1,0 +1,13 @@
+diff --git a/node_modules/@vue/cli-service/lib/commands/serve.js b/node_modules/@vue/cli-service/lib/commands/serve.js
+index 0852171..7575bbb 100644
+--- a/node_modules/@vue/cli-service/lib/commands/serve.js
++++ b/node_modules/@vue/cli-service/lib/commands/serve.js
+@@ -213,7 +213,7 @@ module.exports = (api, options) => {
+         console.log(`  App running at:`)
+         console.log(`  - Local:   ${chalk.cyan(urls.localUrlForTerminal)} ${copied}`)
+         if (!isInContainer) {
+-          console.log(`  - Network: ${chalk.cyan(networkUrl)}`)
++          // console.log(`  - Network: ${chalk.cyan(networkUrl)}`)
+         } else {
+           console.log()
+           console.log(chalk.yellow(`  It seems you are running Vue CLI inside a container.`))

@@ -1,0 +1,772 @@
+html body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #EDF0F6;
+}
+
+.wrap-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.heiader-wrap {
+  position: relative;
+  height: 96px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 5;
+}
+
+.footer-wrap {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: #EDF0F6;
+  z-index: 2;
+}
+
+.footer-text {
+  z-index: 2;
+  font-size: 14px;
+  color: #909CA9;
+}
+
+.logo-wrap {
+  width: 100%;
+  height: 96px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.logo-bg1 {
+  width: 310px;
+  height: 40px;
+  background: url(https://oss-exhibition.sfabric.com/user-center/static/other/image/logo-pic.png?v=1) no-repeat;
+  background-size: 100%;
+  margin-left: 60px;
+
+}
+
+.text-span {
+  font-size: 20px;
+  color: #181721;
+}
+
+.line-cls {
+  color: #dcebfb;
+  margin: 0 30px;
+  font-size: 22px;
+}
+
+.container {
+  width: 100%;
+}
+
+.smart_fabric {
+  display: none;
+  width: 100%;
+  height: 76px;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+}
+
+.smart_fabric .content {
+  position: relative;
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.smart_fabric .text {
+  line-height: 76px;
+  padding: 0px 15px 0px 80px;
+  margin-right: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  border-right: 1px #ccc solid;
+}
+
+.cont-box {
+  box-sizing: border-box;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.cont-box-main {
+  width: 1100px;
+  height: 520px;
+  border-radius: 16px;
+  background-color: #fff;
+  display: flex;
+  box-shadow: 0 0 34px rgba(116, 146, 182, 0.5);
+  overflow: hidden;
+}
+
+.img-bg-wrap {
+  width: 640px;
+  height: 520px;
+  overflow: hidden;
+  background-color: #295ADA;
+}
+
+.img-bg {
+  width: 700px;
+  height: 586px;
+  /* background: url('../assets/CRM-DL.png') no-repeat; */
+  background: url(https://oss-exhibition.sfabric.com/user-center/static/other/image/CRM-DL.png?v=1) no-repeat;
+  background-size: cover;
+  background-position-x: -30px;
+  background-position-y: -30px;
+}
+
+.login {
+  width: 100%;
+  height: calc(100% - 130px);
+  /* background-color: #EDF0F6; */
+  position: relative;
+}
+
+body.edit {
+  /* background: #f2f2f2; */
+}
+
+body.edit .logo {
+  display: none;
+}
+
+body.edit .smart_fabric {
+  display: block;
+}
+
+.loginAndPassword {
+  position: relative;
+  display: block;
+  width: 460px;
+  /* height: 420px; */
+  margin-left: auto;
+  background: #FFFFFF;
+  border-radius: 14px;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 0 50px;
+  padding-bottom: 0;
+  flex-shrink: 0;
+  padding-top: 50px;
+}
+
+body.edit .loginAndPassword {
+  margin-left: auto;
+}
+
+body.edit .loginAndPassword {
+  display: block;
+}
+
+.login_page {
+  display: block;
+}
+
+.find_password_page {
+  display: none;
+}
+
+.enter_new_password {
+  display: none;
+}
+
+.login_success {
+  display: none;
+}
+
+.loginAndPassword .find_password_page .header {
+  font-size: 14px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.loginAndPassword .find_password_page .control-label {
+  margin: 10px 0 0 0;
+  /* text-align: right; */
+}
+
+.row {
+  margin: 0;
+}
+
+.row>[class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.loginAndPassword .find_password_page .form-group,
+.enter_new_password .row {
+  margin-bottom: 35px;
+}
+
+.code {
+  margin-left: 9px;
+}
+
+.code .btn {
+  width: 119px;
+  height: 46px;
+}
+
+.btn {
+  font-size: 14px;
+}
+
+input::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.message {
+  position: relative;
+}
+
+.message i {
+  position: absolute;
+  font-size: 12px;
+  color: red;
+  font-style: normal;
+  display: block;
+  line-height: 12px;
+}
+
+.loginAndPassword .btn-gray {
+  background-color: #f4f4f5;
+  color: #909399;
+  border-color: #e9e9eb;
+}
+
+.login_page .header {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.header .user-name {
+  font-size: 26px;
+  color: #151130;
+  font-weight: 700;
+}
+
+.login_page .tips {
+  font-size: 12px;
+  color: #909CA9;
+  margin-bottom: 24px;
+}
+
+.login_page .message {
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.login_page .message i {
+  position: absolute;
+}
+
+.login_page .message .user {
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  left: 13px;
+  background: url(https://oss-exhibition.sfabric.com/user-center/static/other/image/user.png?v=1);
+  background-size: 100%;
+}
+
+.login_page .message .password {
+  width: 16px;
+  height: 16px;
+  top: 16px;
+  left: 13px;
+  background: url(https://oss-exhibition.sfabric.com/user-center/static/other/image/pwd.png?v=1);
+  background-size: 100%;
+}
+
+.login_page .message .eye {
+  width: 14px;
+  height: 7px;
+  top: 17px;
+  right: 13px;
+  background: url(https://oss-exhibition.sfabric.com/user-center/static/other/image/password.png?v=1);
+}
+
+.login_page .message input {
+  text-indent: 1.6em;
+}
+
+.login_page .checkbox {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login_page .checkbox.forget {
+  /* float: right; */
+  margin-top: 0;
+}
+
+.login_page .checkbox .forgetPassword {
+  font-size: 12px;
+  color: #0094ff;
+  cursor: pointer;
+  /* text-align: right; */
+  /* float: right; */
+}
+
+.login_page .checkbox label {
+  font-size: 12px;
+  color: #909CA9;
+}
+
+.login_page .checkbox label input {
+  vertical-align: sub;
+}
+
+.login_page .sign_in {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.login_page .sfabric {
+  font-size: 12px;
+  color: #909CA9;
+  margin-bottom: 10px;
+}
+
+.login_page .errorLogin {
+  color: red;
+  font-size: 18px;
+}
+
+.enter_new_password label {
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.enter_new_password .new_password_tip {
+  text-align: center;
+  margin: 30px;
+}
+
+.enter_new_password .nextStep {
+  margin-bottom: 30px;
+}
+
+.login_success .success_text {
+  text-align: center;
+  margin: 40px;
+}
+
+.login_success .toLogin {
+  margin-bottom: 30px;
+}
+
+.CompleteInformation {
+  display: none;
+  width: 800px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 3, 86, 0.05);
+  box-shadow: 0 3px 9px 0 rgba(8, 0, 65, 0.10);
+  border-radius: 6px;
+  /* border-radius: 6px; */
+  font-size: 14px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px 40px 0;
+  padding-bottom: 0;
+  margin: 30px auto;
+}
+
+.CompleteInformation .container {
+  width: 100%;
+}
+
+.CompleteInformation .row {
+  margin-bottom: 50px;
+}
+
+.CompleteInformation .row .right {
+  text-align: right;
+  padding-right: 60px;
+}
+
+.CompleteInformation .btn-sm {
+  margin-top: -4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.modal {
+  top: 15vh;
+}
+
+.modal .container {
+  width: 100%;
+}
+
+.modal .container .row {
+  margin: 15px 0 30px 0;
+}
+
+.modal .container label {
+  text-align: right;
+  padding-right: 30px;
+  margin-top: 7px;
+}
+
+.modal .container select {
+  width: 66px;
+}
+
+.modal .container .across {
+  text-align: center;
+  margin: 5px -13px 0;
+}
+
+#modalEmail {
+  width: 98%;
+}
+
+#tipModal .modal-dialog {
+  width: 300px;
+}
+
+#tipModal .modal-body {
+  display: flex;
+}
+
+#tipModal .glyphicon {
+  font-size: 40px;
+}
+
+#tipModal .supplyMessage {
+  margin-left: 10px;
+}
+
+#tipModal .modal-footer {
+  border-top: transparent;
+  text-align: center;
+}
+
+#tipModal .nextTime {
+  margin-right: 40px;
+}
+
+.topTipMessage {
+  display: none;
+  position: absolute;
+  text-align: center;
+  top: 40px;
+  min-width: 400px;
+  z-index: 1041;
+}
+
+.btn-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+  height: 46px;
+}
+
+.btn-primary:visited {
+  border-color: #46a6ff;
+}
+
+.btn-primary:focus {
+  background: #46a6ff;
+  border-color: #46a6ff;
+  /* border: 1px solid #ccc; */
+  outline: none;
+  color: #fff;
+}
+
+.btn-primary:active:focus {
+  color: #fff;
+  background-color: #46a6ff;
+  border-color: #46a6ff;
+  outline: none;
+}
+
+.btn-primary:hover {
+  background: #46a6ff;
+  border-color: #46a6ff;
+  color: #fff;
+}
+
+.btn-primary:active {
+  background: #1682e6;
+  border-color: #1682e6;
+  color: #fff;
+  outline: none;
+}
+
+.btn-default:visited {
+  border-color: #46a6ff;
+}
+
+.btn-default:focus {
+  color: #1890ff;
+  border-color: #badeff;
+  background-color: #e8f4ff;
+  outline: none;
+}
+
+.btn-default:active:focus {
+  color: #fff;
+  background-color: #badeff;
+  border-color: #badeff;
+  outline: none;
+}
+
+.btn-default:hover {
+  color: #1890ff;
+  border-color: #badeff;
+  background-color: #e8f4ff;
+}
+
+.btn-default:active {
+  color: #1682e6;
+  border-color: #1682e6;
+  outline: none;
+}
+
+/* 新增中英文切换样式 */
+.chineseOrEnglish .radio {
+  display: inline;
+}
+
+.form-control {
+  height: 46px;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.chinese-text {
+  font-size: 14px;
+  color: #666666;
+  cursor: pointer;
+}
+
+.chinese-line {
+  margin: 0 10px;
+  font-size: 12px;
+  color: #888E9E;
+}
+
+.chinese-text.active {
+  font-size: 16px;
+  color: #0986FF;
+}
+
+.alert-danger {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.form-row-box {
+  display: flex;
+}
+
+.form-row-box .form-group {
+  flex: 1;
+  margin: 0 10px;
+}
+
+/* 设备高度小于等于900时 */
+
+@media (max-height: 900px) {
+  .wrap-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .heiader-wrap {
+    position: relative;
+    height: 70px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 5;
+  }
+
+  .loginAndPassword {
+    position: relative;
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    background: #FFFFFF;
+    border-radius: 14px;
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 0 40px;
+    padding-bottom: 0;
+    flex-shrink: 0;
+    padding-top: 20px;
+  }
+
+  .footer-wrap {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    background-color: #EDF0F6;
+  }
+
+  .footer-text {
+    z-index: 2;
+    font-size: 14px;
+    color: #909CA9;
+  }
+
+  .logo-wrap {
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-bg1 {
+    width: 280px;
+    height: 40px;
+    background-size: 100%;
+    margin-left: 60px;
+
+  }
+
+  .text-span {
+    font-size: 20px;
+    color: #181721;
+  }
+
+  .line-cls {
+    color: #dcebfb;
+    margin: 0 30px;
+    font-size: 22px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .smart_fabric {
+    display: none;
+    width: 100%;
+    height: 76px;
+    position: absolute;
+    top: 0;
+    /* left: 50%; */
+    /* margin-left: -683px; */
+    background-color: #fff;
+  }
+
+  .smart_fabric .content {
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+  }
+
+  .smart_fabric .text {
+    line-height: 76px;
+    padding: 0px 15px 0px 80px;
+    margin-right: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    border-right: 1px #ccc solid;
+  }
+
+  .cont-box {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cont-box-main {
+    width: 900px;
+    height: 440px;
+    border-radius: 16px;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 0 34px rgba(116, 146, 182, 0.5);
+    overflow: hidden;
+  }
+
+  .img-bg-wrap {
+    width: 540px;
+    height: 440px;
+    overflow: hidden;
+    background-color: #295ADA;
+  }
+
+  .img-bg {
+    width: 550px;
+    height: 480px;
+    background-size: cover;
+    background-position-x: -53px;
+    background-position-y: -24px;
+  }
+
+  .login {
+    width: 100%;
+    height: calc(100% - 120px);
+    background-color: #EDF0F6;
+    position: relative;
+    overflow-y: auto;
+  }
+
+  .header .user-name {
+    font-size: 20px;
+  }
+
+  .form-control {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .btn-primary,
+  .code .btn {
+    height: 40px;
+  }
+  .login_page .message .user {
+    top: 12px;
+
+  }
+
+  .login_page .message .password {
+    top: 12px;
+  }
+
+}

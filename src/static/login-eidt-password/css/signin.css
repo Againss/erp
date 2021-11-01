@@ -1,0 +1,71 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.loginAndPassword {
+  border:0;
+  position: relative;
+  background: #fff url('https://oss-exhibition.sfabric.com/user-center/static/other/image/QRcode.png?v=1') no-repeat right top;
+  background-size: 70px;
+}
+#weComQrCode iframe {
+    width: 100%;
+    height: 285px;
+}
+.change-login {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border-top: 40px solid transparent;
+  border-left: 40px solid transparent; 
+}
+.QRcode {
+  background: #fff url('https://oss-exhibition.sfabric.com/user-center/static/other/image/computed.png?v=1') no-repeat right top;
+  background-size: 70px;
+}
+.dis-none {
+  display: none;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+.login_page .header {
+  margin: 30px 0 10px;
+}

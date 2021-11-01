@@ -1,0 +1,207 @@
+
+html body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+.login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-content: center; */
+}
+.smart_fabric {
+    /* display: none; */
+    width: 100%;
+    height: 76px;
+    position: absolute;
+    top: 0;
+    /* left: 50%; */
+    /* margin-left: -683px; */
+    background-color: #fff;
+}
+.smart_fabric .content {
+    position: relative;
+    width: 1366px;
+    margin: 0 auto ;
+}
+.smart_fabric .content i {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    background: url(https://oss-exhibition.sfabric.com/user-center/static/other/image/logo.jpg?v=1);
+}
+.smart_fabric .text {
+    line-height: 76px;
+    padding: 0px 15px 0px 80px;
+    margin-right: 10px;
+    font-size: 32px;
+    font-weight: 700;
+    border-right: 1px #ccc solid;
+}
+.row > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.message {
+    position: relative;
+}
+.message i {
+    position: absolute;
+    font-size: 12px;
+    color: red;
+    font-style: normal;
+}
+.code {
+    margin-left: 9px;
+}
+.code .btn {
+    width: 119px;
+}
+.CompleteInformation {
+    width: 800px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0,3,86,0.05);
+    box-shadow: 0 3px 9px 0 rgba(8,0,65,0.10);
+    border-radius: 6px;
+    /* border-radius: 6px; */
+    font-size: 14px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 20px 40px 0;
+    padding-bottom: 0;
+}
+.CompleteInformation .container {
+    width: 100%;
+}
+.CompleteInformation .row {
+    margin-bottom: 50px;
+}
+.CompleteInformation .row .right {
+    text-align: right;
+    padding-right: 60px;
+}
+.CompleteInformation .btn-sm {
+    margin-top: -4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.CompleteInformation .completeFooter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.CompleteInformation .completeFooter .save {
+    margin-right: 20px;
+}
+.modal {
+    top: 15vh;
+}
+.modal .container {
+    width: 100%;
+}
+.modal .container .row {
+    margin: 15px 0 30px 0;
+}
+.modal .container label {
+    text-align: right;
+    padding-right: 30px;
+    margin-top: 7px;
+}
+.modal .container select {
+    width: 66px;
+}
+.modal .container .across {
+    text-align: center;
+    margin: 5px -13px 0;
+}
+#modalEmail {
+    width: 98%;
+}
+#tipModal .modal-dialog {
+    width: 300px;
+}
+#tipModal .modal-body {
+    display: flex;
+}
+#tipModal .glyphicon {
+    font-size: 40px;
+}
+#tipModal .supplyMessage {
+    margin-left: 10px;
+}
+#tipModal .modal-footer {
+    border-top: transparent;
+    text-align: center;
+}
+#tipModal .nextTime {
+    margin-right: 40px;
+}
+.topTipMessage {
+    display: none;
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    min-width: 400px;
+    z-index: 1041;
+}
+.btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+.btn-primary:visited {
+    border-color: #46a6ff;
+}
+.btn-primary:focus {
+    background: #46a6ff;
+    border-color: #46a6ff;
+    /* border: 1px solid #ccc; */
+    outline: none;
+    color: #fff;
+}
+.btn-primary:active:focus {
+    color: #fff;
+    background-color: #46a6ff;
+    border-color: #46a6ff;
+    outline: none;
+}
+.btn-primary:hover {
+    background: #46a6ff;
+    border-color: #46a6ff;
+    color: #fff;
+}
+.btn-primary:active {
+    background: #1682e6;
+    border-color: #1682e6;
+    color: #fff;
+    outline: none;
+}
+.btn-default:visited {
+    border-color: #46a6ff;
+}
+.btn-default:focus {
+    color: #1890ff;
+    border-color: #badeff;
+    background-color: #e8f4ff;
+    outline: none;
+}
+.btn-default:active:focus {
+    color: #fff;
+    background-color: #badeff;
+    border-color: #badeff;
+    outline: none;
+}
+.btn-default:hover {
+    color: #1890ff;
+    border-color: #badeff;
+    background-color: #e8f4ff;
+}
+.btn-default:active {
+    color: #1682e6;
+    border-color: #1682e6;
+    outline: none;
+}
